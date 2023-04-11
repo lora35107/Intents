@@ -36,6 +36,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnEmail.setOnClickListener {
+            val emailIntent = Intent(Intent.ACTION_SENDTO,Uri.fromParts("mail to","serenawakesho@gmail.com",null))
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "JOB APPLICATION")
+            emailIntent.putExtra(Intent.EXTRA_TEXT, "Dear madam .......")
+            startActivity(Intent.createChooser(emailIntent, "Send email"))
+
+
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 
