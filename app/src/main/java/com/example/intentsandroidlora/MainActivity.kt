@@ -54,6 +54,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnSite.setOnClickListener {
+            // code to navigate from one activity to another
+            val gotoanotheractivity =Intent(this, WebsiteActivity::class.java)
+            startActivity( gotoanotheractivity)
+        }
+
 
 
 
